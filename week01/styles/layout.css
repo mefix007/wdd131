@@ -45,7 +45,7 @@ p {
 body {
     display: grid;
     height: 100vh;
-    grid-template: auto 1fr auto / 65em 1fr auto;
+    grid-template: auto 1fr auto / 800px 1fr auto;
   }
   
   header {
