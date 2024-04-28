@@ -57,6 +57,7 @@ ul li a:hover {
 	grid-template-columns: 60% 30%;
 	justify-content: space-evenly;
 	margin-top: 10px;
+	max-width: fit-content;
 }
 
 .card {
