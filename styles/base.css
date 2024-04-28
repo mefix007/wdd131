@@ -29,6 +29,12 @@ h1 {
 	background-color: rgb(10, 94, 169);
   }
 
+h2 { 
+    text-align: center;
+	background-color: rgb(10, 94, 169);
+	color: azure; 
+  }
+
 ul {
 	display: flex;
 	background-color: #2b2424;
@@ -81,7 +87,7 @@ ul li a:hover {
 	padding: 10px;
  }
 
-h2 {
+h3 {
 	text-align: center;
 	border-bottom: 2px solid  rgb(10, 94, 169);
 	margin-left: 150px;
