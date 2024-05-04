@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    background-color: azure;
+}
+
+header{
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(85, 85, 242);
+    display: grid;
+}
+
+nav {
+    background-color: rgb(14, 3, 59);
+    display: flex;
+    border-radius: 0 0 10px 10px;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    color: azure;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: azure;
+    top: 1.3rem;
+    right: 1.3rem;
+    position: absolute;
+}
+.open a {
+	display: block;
+}
+#menu::before{
+    content: "☰";  
+}
+#menu.open::before {
+	content: "❎";
+}
+h1 {
+    padding: 1rem;
+    color: azure;
+}
+main h2 {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+}
+
+figure {
+    height: 250px;
+    width: clamp(150px, 50%, 220px);
+    margin: auto;
+    align-items: center;
+}
+
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+}
+
+
+footer {
+    background-color: rgb(85, 85, 242);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    border: 0.5px;
+    border-radius: 0 0 10px 10px;
+}
