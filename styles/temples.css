@@ -39,7 +39,7 @@ nav ul {
 #menu {
     font-size: 1.5rem;
     border: 0;
-    background: rgb(102, 94, 109);
+    background: rgb(63, 152, 230);
     color: azure;
     top: 1.3rem;
     right: 1.3rem;
@@ -48,15 +48,23 @@ nav ul {
 #menu::before{
     content: "☰";  
 }
-#menu.show::before {
+#menu.open::before {
 	content: "❎";
 }
-.show li {
+.active {
+    color: rgb(218, 214, 21);
+}
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+/* .show li {
     display: block;
 }
 .navigation li {
     display: none;
-}
+} */
 /* .navigaton a {
 	display: block;
 } */
