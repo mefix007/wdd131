@@ -5,7 +5,7 @@
     --light-on-color: #f1e02600;
     --background: rgb(62, 114, 57) ;
     --text-color: rgb(67, 63, 63);
-    --active: rgb(121, 243, 68);
+    --active: rgba(121, 243, 68, 0.539);
     --nav-text: rgb(206, 233, 210);
     --layout: solid 1px rgb(235, 120, 120);
     --cards: rgb(84, 175, 140);
@@ -96,21 +96,26 @@ main p {
     width: 100%;
     gap: 15px;
     box-sizing: border-box;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     background-color: var(--cards);
     padding: 20px;
     box-shadow: 0 0 40px #434343;
 }
+
 section {
     margin: 0.15rem;
     padding: 0.35rem;
-  
+    transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+section:hover {
+    transform: scale(1.05);
+  }
+  
 img {
     width: auto;
     max-width: 325px;
