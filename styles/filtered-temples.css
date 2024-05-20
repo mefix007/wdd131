@@ -85,7 +85,7 @@ main p {
 }
 .open a {
     display: block;
-    width: 478px;
+    width: 250px;
     transition: 5ms;
 }
 #menu.open::before {
