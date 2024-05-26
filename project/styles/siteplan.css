@@ -6,3 +6,49 @@
     --nav-text: rgb(249, 72, 125);
     --cards: rgb(233, 36, 111);
 }
+/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+header{
+	background-color: var(--secondary);
+	color: azure;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+main {
+    padding: 20px;
+}
+
+h1 { 
+    text-align: center;
+	/* background-color: rgb(10, 94, 169); */
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    background-color: var(--others);
+}
+img {
+    border: 2px solid;
+    border-color: var(--primary);
+   
+}
+
+footer {
+    background: var(--secondary);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
