@@ -1,19 +1,12 @@
-const currentYear = document.querySelector('#year');
-const lastModification = document.querySelector('#lastModification');
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('nav');
+const year = document.querySelector('#currentyear');
+const today = new Date();
+year.innerHTML = today.getFullYear();
 
-// Get Dates
-const today = new Date()
-const lastModificationDate = new Date(document.lastModified)
-
-// Render to DOM Content
-currentYear.innerHTML = `${today.getFullYear()}`
-lastModification.innerHTML = `Last Modification: ${lastModificationDate}`
+const lastModified = document.querySelector('#lastModified');
+lastModified.innerHTML = (document.lastModified);
 
 
-
-const products = [
+const product = [
   {
     id: "fc-1888",
     name: "flux capacitor",
@@ -40,12 +33,12 @@ const products = [
     averageRating: 5.0
   },
 ];
-insertDateAndIcon();
-insertTextAndModifiedDate();
+// insertDateAndIcon();
+// insertTextAndModifiedDate();
 
 const selectTag = document.getElementById("product");
 const populateSelect = () => {
-products.forEach((item) => {
+product.forEach((item) => {
   const option = document.createElement("option");
   option.setAttribute("value", `${item.name}`);
   option.textContent = `${item.name.toUpperCase()}`;
@@ -60,3 +53,4 @@ window.addEventListener("DOMContentLoaded", function() {
   firstOption.disabled = true; // Disable the first option
   selectElement.focus(); // Focus the select element (default focus goes to first non-disabled option)
 });
+
