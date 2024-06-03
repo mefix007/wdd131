@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website project</title>
+    <meta name="description" content="WDD131- web site projet- DOM - Odusile Olufemi.">
+    <meta name="author" content="Odusile Olufemi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="image/japhet-logo.png" alt="Company Logo" class="logo">
+        </div>
+        <a id="menu" href="#"></a>
+        <nav class="navigation nav">
+            <a href="#" id="Home">Home</a>
+            <a href="#" id="Iphones">Iphones</a>
+            <a href="#" id="Samsungs">Samsungs</a>
+            <a href="#" id="Huaweis">Huaweies</a>
+            <a href="#" id="Androids">Androids</a>
+            <a href="japheth-form.html">Subscribe</a>
+        </nav>
+    </header>
+    <main>
+        <h2>www.Japheth's-Hub.com</h2>
+        <div>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="image/iphone-13-color-lineup.webp" alt="Iphone 13">
+                </div>
+                <div class="slide fade">
+                    <img src="image/samsung-galaxy21.webp" alt="samsung ultra">
+                </div>
+                <div class="slide fade">
+                    <img src="image/galaxy-Z-flip.webp" alt="galaxy Z flip">
+                </div>
+                <div class="slide fade">
+                    <img src="image/hauwei-mate-pro-60p.webp" alt="Huawei P60">
+                </div>
+                <div class="slide fade">
+                    <img src="image/samsung-note.webp" alt="samsung note">
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span>🔰Odusile Olufemi🔰Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

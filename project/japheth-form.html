@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website project</title>
+    <meta name="description" content="WDD131- Newsletter Subscription- Odusile Olufemi.">
+    <meta name="author" content="Odusile Olufemi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/japheth-form.css">
+    <script src="scripts/japheth-form.js" defer></script>
+
+    
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="image/japhet-logo.png" alt="Company Logo" class="logo">
+        </div>
+        <a id="menu" href="#"></a>
+        <nav class="navigation nav">
+            <a href="project.html" id="Home">Home</a>
+            <a href="project.html" id="Iphones">Iphones</a>
+            <a href="project.html" id="Samsungs">Samsungs</a>
+            <a href="project.html" id="Huaweis">Huaweies</a>
+            <a href="project.html" id="Androids">Androids</a>
+            <a href="japheth-form.html">Subscribe</a>
+        </nav>
+    </header>
+    <main>
+        <h2>www.Japheth's-Hub.com</h2>
+
+    <form method="get" action="review.html" class="wf1">
+        <fieldset>
+            <legend><strong>Subscribe to Newsletter</strong></legend>
+            <label>
+                <select name="product" id="product" required>
+                    <option value="">Select a Product</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="feature">
+            <label>Interested Features</label>
+            <label><input type="checkbox" id="feat1" name="feature" value="durability">IOS / Software update</label>
+            <label><input type="checkbox" id="feat2" name="feature" value="performance">Durability</label>
+            <label><input type="checkbox" id="feat3" name="feature" value="ease of use">Storage Capacity</label>
+            <label><input type="checkbox" id="feat4" name="feature" value="design">Screen size and Display Features</label>
+        </fieldset>
+        <fieldset class="stars">
+            <legend> Rate This Site</legend>
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Written Review</legend>
+            <label for="review"></label>
+            <textarea name="textarea" id="review" rows="4" cols="38"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Your Name</legend>
+            <label><input type="text" name="fname" id="fname"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Email </legend>
+            <input type="text" name="test" id="test" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,10}$" 
+          title="6 to 10 characters inclusive with at least on ne number, one special character, one upper case and one lower case letter.">
+        </fieldset>
+        <fieldset>
+            <legend>Today's Date</legend>
+            <label><input type="date" id="installed-date" name="date" required></label>
+        </fieldset>
+        <div class="stars"></div>
+        <button id="button" type="submit" value="product_review">Submit</button>
+    </form>
+    <!-- <footer>
+        <p>©<span id="currentyear"></span>🔰Odusile Olufemi🔰Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer> -->
+</body>
+
+</html>
